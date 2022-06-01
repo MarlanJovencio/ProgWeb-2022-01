@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2 2022-05-30</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .menu-left {
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+        
+        .menu {
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+        
+        .menu a {
+            background-color: #e5e5e5;
+            padding: 8px;
+            margin-top: 7px;
+            display: block;
+            width: 100%;
+        }
+        
+        .at-right {
+            float: left;
+            width: 20%;
+            padding: 15px;
+            margin-top: 7px;
+            text-align: center;
+        }
+        
+        .at-right ul {
+            text-align: left;
+            font-weight: bold;
+            color: #595959;
+        }
+        
+        .at-right ul ul {
+            font-weight: normal;
+            color: #8c8c8c;
+        }
+        
+        .main {
+            float: left;
+            width: 60%;
+            padding: 20px 20px;
+        }
+
+        .form label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-image: url(images/background-white.webp);
+                padding:15px;
+                height:180px">
+        <img src="images/user.webp" style="width:150px;display:inline-block;vertical-align: middle;"/>
+        <h1 style="display:inline-block;vertical-align:middle;text-align:center;width:80%;">Nome</h1>
+    </div>
+    
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="video.html">Vídeo</a>
+        <a href="tabela-preco.html">Tabela Preço</a>
+        <a href="formulario-contato.html">Formulário Contato</a>
+    </div>
+    
+    <div class="main">
+        <form class="form">
+            <label for="nome">Nome</label><br>
+            <input type="text" id="nome" placeholder="Informe o seu Nome"><br>
+            <label for="nomeEmpresa">Nome da Empresa</label><br>
+            <input type="text" id="nome" placeholder="Informe o Nome da sua Empresa"><br>
+            <label for="email">E-mail</label><br>
+            <input type="text" id="nome" placeholder="Informe um E-mail de contato"><br>
+            <label for="telefone">Telefone</label><br>
+            <input type="text" id="nome" placeholder="Informe um Telefone"><br>
+            <label for="mensagem">Mensagem</label><br>
+            <input type="text" id="nome" placeholder="Informe uma Mensagem"><br><br>
+            <input type="submit">
+        </form>
+    </div>
+    
+    <div class="at-right">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Lorem</li>
+                <ul><li>Lorem ipsum dolor sit amet, consectetuer</li></ul>
+            <li>Dolor</li>
+                <ul><li>Lorem ipsum dolor sit amet, consectetuer</li></ul>
+            <li>Amet</li>
+                <ul><li>Lorem ipsum dolor sit amet, consectetuer</li></ul>
+            <li>adipiscing</li>
+                <ul><li>Lorem ipsum dolor sit amet, consectetuer</li></ul>
+        </ul>
+    </div>
+
+    <div style="text-align:center;margin-top:7px;">© copyright Marlan Jovencio</div>
+</body>
+</html>
