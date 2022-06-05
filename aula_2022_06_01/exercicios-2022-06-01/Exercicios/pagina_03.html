@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>pagina_03.html</title>
+		<meta charset="UTF-8" />
+	</head>
+	<body>
+		<h1>Exemplo de links</h1>
+		<h2>Referência para uma imagem (link relativo)</h2>
+		<p>
+            <img src="imgs/tigre.jpg" alt="Figura de um tigre" title="Figura do tigre">
+		</p>
+		<h2>Referência para uma página Web (link absoluto)</h2>
+		<p>
+			Este parágrafo contém um link para o site do professor:
+			<a href="http://jeiks.net">
+			Jacson
+			</a>
+		</p>
+        <h2>Referência para uma página desta atividade:</h2>
+		<p>
+			Este parágrafo contém um link para a atividade número 01 deste exercício:
+			<a href="pagina_01.html">
+			Página 01.
+			</a>
+		</p>
+        <h2>Referência para um vídeo qualquer:</h2>
+        <p>
+			Este parágrafo contém um link para um 
+			<a href="videos/video_preview_h264.mp4">
+			preview de um vídeo de peixes
+			</a>.
+		</p>
+	</body>
+</html>
+
+<!--
+1. Qual a diferença da referência (link) do tigre e do site?
+    O link da figura do tigre está redirecionando para uma imagem alocada em algum lugar(neste caso na pasta imgs);
+    Já o link do site está redirecionando para um site na internet(neste caso o site do professor).
+2. Adicione mais dois links nesse HTML.
+3. Altere o texto 'figura do tigre' para uma imagem ('<img src="..." .../>') do tigre e explique a diferença.
+    A tag de imagem adicona a imagem na própria tela, já o link redirecionará para aquela imagem em uma nova tela.
+4. Qual a diferença entre um link relativo e um link absoluto?
+   Obs.: a tag 'a' é conhecida como âncora.
+    Os links relativos referem-se a objetos localizados na mesma pasta do arquivo que convoca esses links; Podendo ser um link relativo ao arquivo editato ou a pasta do projeto em si:
+        relativo ao arquivo: href="index.html" esse link vai abrir o arquivo aula_2022_06_01/exercicios-2022-06-01/Exercicios/index.html
+        relativo à raiz: href="aula_2022_06_01/exercicios-2022-06-01/Exercicios/index.html" esse link vai abrir o mesmo arquvio do link anterior, porém mais expecificado ao código o diretório do arquivo
+    Os links absolutos referem-se a objetos localizado em um lugar especifico, por exemplo:
+        href="https://picsum.photos/200" refere-se à um link de imagem de um lugar exato da internet, ou
+        href="{diretorioProjeto}/ProgWeb-2022-01/aula_2022_06_01/exercicios-2022-06-01/Exercicios/imgs/tigre.jpg" refere-se à uma imagem em um lugar especifico da máquina que está executando o html.
+-->
