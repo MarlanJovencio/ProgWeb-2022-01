@@ -38,3 +38,41 @@ a:hover {
     color: white;
     background-color: rgb(0, 0, 0);
 }
+
+.lugar img {
+    height: 200px;
+    border: 1px solid black;
+    float: left;
+    margin: 10px 10px 0px 0px;
+    padding: 2px;
+}
+
+.clear {
+    clear: both;
+}
+
+.notas {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    opacity: .6;
+}
+
+.container-left {
+    float: left;
+    width: 75%;
+}
+
+.container-right {
+    float: right;
+    width: 20%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 2px;
+}
