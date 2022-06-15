@@ -1,0 +1,106 @@
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+body {
+    font-family: "Lucida Sans Unicode", Verdana, sans-serif;
+    line-height: 1.6;
+    background: #cc7766 url("../images/noise.png");
+}
+
+.lugar {
+    border-color: #CCC #999 #999 #CCC;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.781);
+}
+
+.lugar h2 {
+    border-bottom: 1px dashed #5c6818;
+    margin: 0;
+}
+
+.lugar a {
+    color: #2c11af;
+    font-weight: bold;
+}
+
+a {
+    color: #2c88a7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.lugar img {
+    height: 200px;
+    border: 1px solid black;
+    float: left;
+    margin: 10px 10px 0px 0px;
+    padding: 2px;
+}
+
+.clear {
+    clear: both;
+}
+
+.notas {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    opacity: .6;
+}
+
+.container-left {
+    float: left;
+    width: 75%;
+}
+
+.container-right {
+    float: right;
+    width: 20%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infos {
+    border-color: #CCC #999 #999 #CCC;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.781);
+}
+
+.infos h2 {
+    border-bottom: 1px dashed #5c6818;
+    margin: 0;
+}
+table, th, td {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    padding: 2px;
+}
+tr:hover {background-color: #D6EEEE;}
+
+th, td {
+    padding: 4px;
+}
+
+table {
+    width: 80%;
+    margin-top: 20px;
+}
