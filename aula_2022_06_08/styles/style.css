@@ -71,8 +71,36 @@ footer {
     width: 20%;
 }
 
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infos {
+    border-color: #CCC #999 #999 #CCC;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.781);
+}
+
+.infos h2 {
+    border-bottom: 1px dashed #5c6818;
+    margin: 0;
+}
 table, th, td {
-    border: 1px solid black;
+    border-bottom: 1px solid black;
     border-collapse: collapse;
     padding: 2px;
+}
+tr:hover {background-color: #D6EEEE;}
+
+th, td {
+    padding: 4px;
+}
+
+table {
+    width: 80%;
+    margin-top: 20px;
 }
