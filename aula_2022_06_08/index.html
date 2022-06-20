@@ -136,9 +136,39 @@
                 <li>Interessante</li>
             </ol>
         </div>
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238819.97994602573!2d-41.646124227418575!3d-20.727995811432383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbbe9d8fc381383%3A0x854718ddb73cc7f9!2sAlegre%20-%20ES%2C%2029500-000!5e0!3m2!1spt-BR!2sbr!4v1655329846993!5m2!1spt-BR!2sbr"
+            loading="lazy"
+            allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
     </aside>
 
     <div class="clear">
+    </div>
+
+    <div class="form">
+        <form action="submit">
+            <div class="field">
+                <label for="nome">Nome</label><br>
+                <input id="nome" type="text">
+            </div>
+
+            <div class="field">
+                <label for="categoria">Categoria</label>
+                <select name="categoria" id="categoria">
+                    <option value="turismo">Turismo</option>
+                    <option value="curiosidade">Curiosidade</option>
+                    <option value="informacoes">Informações</option>
+                    <option value="outro">Outro Assunto</option>
+                </select>
+            </div>
+            <br>
+            <div class="field">
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            </div>
+        </form>
     </div>
 
     <footer class="clear">&lt;Desenvolvido por Marlan Jovencio&gt;</footer>
