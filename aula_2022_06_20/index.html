@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>20220620</title>
+</head>
+<body>
+    <form action="http://192.168.36.185/fpw/atividade/exe_01.php" method="GET">
+        <label for="nome">Nome</label>
+        <input id="nomeGet" name="nome" type="text"/>
+        
+        <label for="cpf">CPF</label>
+        <input id="cpfGet" name="cpf" type="text" maxlength="11"/>
+        
+        <label for="dataNascimento">Data de Nascimento</label>
+        <input id="dataNascimentoGet" name="dataNascimento" type="date"/>
+
+        <label for="sexo">Sexo</label>
+        <input id="sexoFGet" name="sexo" type="radio" value="F"/>
+        <label for="sexoFGet">Feminino</label>
+        <input id="sexoM" name="sexo" type="radio" value="M"/>
+        <label for="sexoFGet">Masculino</label>
+        
+        <label for="email">E-mail</label>
+        <input id="emailGet" name="email" type="email"/>
+        
+        <label for="telefone">Telefone</label>
+        <input id="telefoneGet" name="telefone" type="tel"/>
+
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form action="https://counter.jeiks.net/atividade/exe_02.php" method="POST">
+        <label for="nome">Nome</label>
+        <input id="nomePost" name="nome" type="text"/>
+        
+        <label for="cpf">CPF</label>
+        <input id="cpfPost" name="cpf" type="text" maxlength="11"/>
+        
+        <label for="dataNascimento">Data de Nascimento</label>
+        <input id="dataNascimentoPost" name="dataNascimento" type="date"/>
+
+        <label for="sexo">Sexo</label>
+        <input id="sexoFPost" name="sexo" type="radio" value="F"/>
+        <label for="sexoF">Feminino</label>
+        <input id="sexoMPost" name="sexo" type="radio" value="M"/>
+        <label for="sexoF">Masculino</label>
+        
+        <label for="email">E-mail</label>
+        <input id="emailPost" name="email" type="email"/>
+        
+        <label for="telefone">Telefone</label>
+        <input id="telefonePost" name="telefone" type="tel"/>
+
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form action="https://counter.jeiks.net/atividade/exe_03.php" method="POST">
+        <label for="nome">Nome</label>
+        <input id="nomePostFlag" name="nome" type="text"/>
+        
+        <label for="cpf">CPF</label>
+        <input id="cpfPostFlag" name="cpf" type="text" maxlength="11"/>
+        
+        <label for="dataNascimento">Data de Nascimento</label>
+        <input id="dataNascimentoPostFlag" name="dataNascimento" type="date"/>
+
+        <label for="sexo">Sexo</label>
+        <input id="sexoFPostFlag" name="sexo" type="radio" value="F"/>
+        <label for="sexoF">Feminino</label>
+        <input id="sexoMPostFlag" name="sexo" type="radio" value="M"/>
+        <label for="sexoF">Masculino</label>
+        
+        <label for="email">E-mail</label>
+        <input id="emailPostFlag" name="email" type="email"/>
+        
+        <label for="telefone">Telefone</label>
+        <input id="telefonePostFlag" name="telefone" type="tel"/>
+
+        <input id="flagPostFlag" name="flag" type="hidden" value="2"/>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form action="https://counter.jeiks.net/atividade/exe_04.php/?flag=3" method="POST">
+        <label for="nome">Nome</label>
+        <input id="nomePost4" name="nome" type="text"/>
+        
+        <label for="senha">Senha</label>
+        <input id="senhaPost4" name="senha" type="password"/>
+
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
