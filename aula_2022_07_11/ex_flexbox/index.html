@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lan="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Section Flexbox</title>
+        <style>
+            body {
+                margin: 0px;
+            }
+            .navbar {
+                background-color: blue;
+                display: flex;
+            }
+            .right {
+                display: flex;
+                margin-left: auto;
+
+            }
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                padding: 11px;
+                font-size: 15px;
+                margin: 5px;
+            }
+            .main {
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+            }
+            h1 {
+                font-size: 25px;
+            }
+            .sections {
+                display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .sextion {
+                display: block;
+            }
+
+            figure img {
+                width: 144px;
+                height: 216px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="#">Logo</a>
+            <div class="right">
+                <a href="#">Sobre</a>
+                <a href="#">Produtos</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
+        <div class="main">
+            <h1>Section Flexbox</h1>
+            <div class="sections">
+                <div class="section">
+                    <figure>
+                        <img src="https://picsum.photos/200/300" alt="random"/>
+                        <figcaption>Foto aleatória 1</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://picsum.photos/201/301" alt="random"/>
+                        <figcaption>Foto aleatória 2</figcaption>
+                    </figure>
+                </div>
+                <div class="section">
+                    <figure>
+                        <img src="https://picsum.photos/202/302" alt="random"/>
+                        <figcaption>Foto aleatória 3</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://picsum.photos/203/303" alt="random"/>
+                        <figcaption>Foto aleatória 4</figcaption>
+                    </figure>
+                </div>
+                <div class="section">
+                    <figure>
+                        <img src="https://picsum.photos/204/304" alt="random"/>
+                        <figcaption>Foto aleatória 5</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://picsum.photos/205/305" alt="random"/>
+                        <figcaption>Foto aleatória 6</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

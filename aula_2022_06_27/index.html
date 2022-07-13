@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" media="print" href="./print.css"/>
+    <title>Documento</title>
+    <style>
+        .tnt {
+            border: 5px solid red;
+            border-radius: 50%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            width: 50px;
+            color: red;
+        }
+
+        .counter {
+            background-color: black;
+            border-top-left-radius: 25px 10px;
+            border-top-right-radius: 25px 10px;
+            color: white;
+            display: block;
+            font-size: 2em;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        figure {
+            position: relative;
+        }
+
+        img {
+            display: block;
+        }
+
+        figCaption {
+            bottom: 5px;
+            margin: 0px 5px;
+            padding: 5px;
+            position: absolute;
+            width: 300px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: lightblue;
+            }
+
+            div .example {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="example">
+        <p>Teste <br/>
+            <a href="google.com.br">teste2</a><br/>
+            <a href="javascript:alert('oi')">oi</a>
+        </p>
+        <h3 class="tnt">TNT</h3>
+        <span class="counter">07</span>
+        <figure>
+            <img
+                src="https://www.publicdomainpictures.net/pictures/130000/nahled/hazy-blue-wallpaper-background.jpg"
+                alt="Wallpaper azul obscuro padrão de fundo"
+            />
+            <figcaption>
+                Imagem de Wallpaper.<br/>
+                <small>
+                    Por alguém desconhecido
+                </small>
+            </figcaption>
+        </figure>
+    </div>
+</body>
+
+</html>
