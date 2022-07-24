@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lan="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Section Grid</title>
+        <style>
+            body {
+                margin: 0px;
+            }
+            img:hover {
+            	cursor: pointer;
+            }
+            .navbar {
+                background-color: #004304;
+                display: flex;
+            }
+            .right {
+                display: flex;
+                margin-left: auto;
+
+            }
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                padding: 11px;
+                font-size: 15px;
+                margin: 5px;
+            }
+			.navbar a:hover {
+				background-color: rgba(17, 100, 22, 0.8);
+				border-radius: 5px;
+			}
+            .main {
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+            }
+            h1 {
+                font-size: 25px;
+            }
+            .sections {
+                display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .section_1 {
+                display: block;
+            }
+            .section_2 {
+                display: block;
+            }
+            .section_3 {
+                display: block;
+            }
+            .add {
+            	grid-row: 3 / span 2;
+            	grid-column: 1 / span 1;
+            }
+            .grid {
+            	display: grid;
+            	grid-template-columns: auto auto auto;
+            }
+            
+            .grid p {
+            	text-align: justify;
+            	margin: auto;
+            	width: 200px;
+            }
+
+            figure img {
+                width: 144px;
+                height: 216px;
+            }
+            
+            .section_1 figure {
+            	border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+            }
+            
+			.leg-right {
+            	display: flex;
+            	margin-left: auto;
+            	align-items: center;
+            }
+            .leg-right figcaption {
+            	margin-left: 5px;
+            }
+            
+            .leg-left {
+	            display: flex;
+            	margin-right: auto;
+            	align-items: center;
+            }
+            .leg-left figcaption {
+            	margin-right: 5px;
+            }
+            .title {
+          	    align-items: start;
+		        display: block;
+				font-size: 20px;
+				grid-column: 1 / span 2;
+				grid-row: 1 / span 2;
+				margin-block-start: 0.67em;
+				margin-block-end: 0.67em;
+				margin-inline-start: 0px;
+				margin-inline-end: 0px;
+				font-weight: bold;
+            }
+            
+            .sr-1 {grid-row: 1 / span 1;}
+            .sr-2 {grid-row: 2 / span 1;}
+            .sr-3 {grid-row: 3 / span 1;}
+            .sr-4 {grid-row: 4 / span 1;}
+            .sr-5 {grid-row: 5 / span 1;}
+            .sc-1 {grid-column: 1 / span 1;}
+            .sc-1_2 {grid-column: 1 / span 2;}
+            .sc-2 {grid-column: 2 / span 1;}
+            .sc-3 {grid-column: 3 / span 1;}
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="#">Logo</a>
+            <div class="right">
+                <a href="#">Sobre</a>
+                <a href="#">Produtos</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
+        <div class="main">
+        	<div class="section_1">
+	            <h1>Section Grid 1</h1>
+   	            <div class="grid">
+	   	            <!--row-->
+	                <figure class="sr-1 sc-1">
+    	                <img src="https://picsum.photos/200/300" alt="random"/>
+    	                <figcaption>Foto aleatória 1</figcaption>
+    	            </figure>
+	                <figure class="sr-1 sc-2">
+    	                <img src="https://picsum.photos/201/301" alt="random"/>
+    	                <figcaption>Foto aleatória 2</figcaption>
+    	            </figure>
+	                <figure class="sr-1 sc-3">
+    	                <img src="https://picsum.photos/202/302" alt="random"/>
+    	                <figcaption>Foto aleatória 3</figcaption>
+    	            </figure>
+    	            <!--row-->
+    	            
+    	            <figure class="sr-2 sc-1">
+    	                <img src="https://picsum.photos/203/303" alt="random"/>
+    	            </figure>
+    	            <figure class="sr-2 sc-2 leg-left">
+    	                <figcaption>Foto aleatória 4</figcaption>
+    	                <img src="https://picsum.photos/204/304" alt="random"/>
+    	            </figure>
+    	            <figure class="sr-2 sc-3 leg-right">
+    	                <img src="https://picsum.photos/205/305" alt="random"/>
+    	                <figcaption>Foto aleatória 5</figcaption>
+    	            </figure>
+    	            <!--row-->
+    	            <p class="add">
+    	            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    	            </p>
+    	            <figure class="sr-3 sc-2 leg-left">
+    	                <figcaption>Foto aleatória 6</figcaption>
+    	                <img src="https://picsum.photos/206/306" alt="random"/>
+    	            </figure>
+	                <figure class="sr-3 sc-3 leg-right">
+    	                <img src="https://picsum.photos/207/307" alt="random"/>
+    	                <figcaption>Foto aleatória 7</figcaption>
+    	            </figure>
+    	            <!--row-->
+    	            <figure class="sr-4 sc-2 leg-left">
+    	                <figcaption>Foto aleatória 8</figcaption>
+    	                <img src="https://picsum.photos/208/308" alt="random"/>
+    	            </figure>
+	                <figure class="sr-4 sc-3 leg-right">
+    	                <img src="https://picsum.photos/209/309" alt="random"/>
+    	                <figcaption>Foto aleatória 9</figcaption>
+    	            </figure>
+   	            </div>
+        	</div>
+        	<div class="section">
+	            <h1>Section Grid 2</h1>
+               	<div class="grid">
+	                <div class="title">
+    	                <img src="https://picsum.photos/600/400" alt="random"/>
+    	                <figcaption>Foto aleatória 1</figcaption>
+    	            </div>
+    	            <figure class="sr-1 sc-3">
+    	                <img src="https://picsum.photos/211/311" alt="random"/>
+    	                <figcaption>Foto aleatória 1</figcaption>
+    	            </figure>
+    	            <figure class="sr-2 sc-3">
+    	                <img src="https://picsum.photos/212/312" alt="random"/>
+    	                <figcaption>Foto aleatória 1</figcaption>
+    	            </figure>
+    	            <figure class="sr-3 sc-3">
+    	                <img src="https://picsum.photos/213/313" alt="random"/>
+    	                <figcaption>Foto aleatória 1</figcaption>
+    	            </figure>
+    	            <figure class="sr-4 sc-3">
+    	                <img src="https://picsum.photos/214/314" alt="random"/>
+    	                <figcaption>Foto aleatória 1</figcaption>
+    	            </figure>
+   	            </div>
+        	</div>
+        	<div class="section">
+	            <h1>Section Flexbox</h1>
+               	<div class="grid">
+	                <figure>
+    	                <img src="https://picsum.photos/200/300" alt="random"/>
+    	                <figcaption>Foto aleatória 1</figcaption>
+    	            </figure>
+   	            </div>
+        	</div>
+        </div>
+    </body>
+</html>
