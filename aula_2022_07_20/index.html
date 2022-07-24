@@ -12,6 +12,14 @@
 
         body {
             background-color: rgba(39, 85, 108, 0.2);
+            overflow-x: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: max-content;
+            max-height: max-content;
         }
 
         .navbar {
@@ -31,23 +39,23 @@
 
         .main-about {
             display: block;
+            width: 100%;
         }
 
         .main-about img {
             display: block;
-            width: auto;
-            height: 600px;
+            width: 100%;
+            height: auto;
             margin: 0 auto;
-            z-index: inherit;
+            margin-bottom: -3%;
             border-bottom: 5px solid #011620;
             border-radius: 5px;
         }
 
         .about-me {
             border: 1px solid #011620;
-            width: 30%;
-            margin-left: 10%;
-            margin-top: -15%;
+            width: 80%;
+            margin: 0 auto;
             background-color: #0F3A4F;
             color: white;
         }
@@ -76,27 +84,140 @@
             font-size: xx-large;
         }
 
+        .work-examples {
+            width: auto;
+            overflow-x: scroll;
+            justify-content: flex-start;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .work-examples::-webkit-scrollbar {
+            display: none;
+        }
+
+        .main-works {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
         .main-works img {
-            width: 22%;
+            width: 80%;
+            height: auto;
             max-height: max-content;
+            max-width: max-content;
+            padding: 15px;
         }
 
         h4 {
+            text-align: center;
             font-size: large;
         }
 
         form {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        form div {
+            padding: 10px;
+            width: 100%;
         }
 
         form div label {
             display: block;
+            font-size: 16px;
+            font-weight: bold;
         }
 
-        @media only screen and (min-width: 768px){
-            
+        form div input:hover,
+        form div input:focus,
+        form div input:focus-visible,
+        form div input {
+            background-color: transparent;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            outline: none;
+            width: 100%;
+            font-size: 20px;
         }
+
+        .subscribe {
+            margin: 15px auto;
+            width: 100%;
+        }
+
+        .subscribe .submit {
+            width: 80%;
+            margin: 5px auto;
+            background-color: rgba( 3, 37, 54, 0.5);
+            border-color: rgba( 3, 37, 54, 0.5);
+            border-radius: 5px;
+        }
+
+        .subscribe .submit:hover {
+            cursor: pointer;
+            background-color: rgba( 3, 37, 54, 0.75);
+            border-color: rgba( 3, 37, 54, 0.75);
+        }
+
+        /*For tablets*/
+        @media only screen and (min-width: 600px) {
+            .about-me {
+                margin-left: 50px;
+                width: 400px;
+            }
+
+            .main-about img {
+                margin-bottom: -5%;
+            }
+
+            .main-works img {
+                width: 100%;
+            }
+
+            .subscribe {
+                margin: 15px auto;
+                width: 500px;
+            }
+        }
+
+        /*For desktop*/
+        @media only screen and (min-width: 768px) {
+            .about-me {
+                margin-left: 100px;
+                width: 400px;
+            }
+
+            .main-works {
+                width: 100%;
+                overflow-x: hidden;
+            }
+
+            .main-works img {
+                width: 25%;
+            }
+
+            .work-examples {
+                justify-content: space-around;
+            }
+
+            .subscribe {
+                margin: 15px auto;
+                width: 750px;
+            }
+
+            .subscribe div {
+                width: 50%;
+            }
+
+            .subscribe .submit {
+                width: 80%;
+            }
+        }
+
     </style>
 
 </head>
@@ -107,7 +228,7 @@
         <a href="#">Blog</a>
     </div>
     <div class="main-about">
-        <img src="C:\Users\UFES\Downloads\Happy-Person-Transparent.png" alt="Foto do indivíduo">
+        <img src="./images/Happy-Person-Transparent.png" alt="Foto do indivíduo">
         <div class="about-me">
             <h3>Nome do fulano</h3>
             <p>
@@ -137,6 +258,8 @@
                 <label for="phone">Telefone</label>
                 <input type="text">
             </div>
+
+            <input type="submit" class="submit">
         </form>
     </div>
 </body>
