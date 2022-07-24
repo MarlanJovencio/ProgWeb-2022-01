@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgba(39, 85, 108, 0.2);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #032536;
+            margin: -8px -8px auto -8px;
+        }
+
+        .navbar a {
+            padding: 10px;
+            text-align: center;
+            font-size: large;
+            text-decoration: none;
+            color: white;
+        }
+
+        .main-about {
+            display: block;
+        }
+
+        .main-about img {
+            display: block;
+            width: auto;
+            height: 600px;
+            margin: 0 auto;
+            z-index: inherit;
+            border-bottom: 5px solid #011620;
+            border-radius: 5px;
+        }
+
+        .about-me {
+            border: 1px solid #011620;
+            width: 30%;
+            margin-left: 10%;
+            margin-top: -15%;
+            background-color: #0F3A4F;
+            color: white;
+        }
+
+        h3 {
+            margin: 10px 10px;
+            padding-bottom: 2px;
+            border-bottom: 2px solid #011620;
+            font-size: x-large;
+        }
+
+        p {
+            margin: 10px;
+        }
+
+        .work-examples {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        h2 {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        .main-works img {
+            width: 22%;
+            max-height: max-content;
+        }
+
+        h4 {
+            font-size: large;
+        }
+
+        form {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        form div label {
+            display: block;
+        }
+
+        @media only screen and (min-width: 768px){
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Trabalhos</a>
+        <a href="#">Podcast</a>
+        <a href="#">Blog</a>
+    </div>
+    <div class="main-about">
+        <img src="C:\Users\UFES\Downloads\Happy-Person-Transparent.png" alt="Foto do indivíduo">
+        <div class="about-me">
+            <h3>Nome do fulano</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quisquam blanditiis est atque nulla libero veritatis eligendi illum animi nemo, sunt nihil provident esse eum dicta reiciendis voluptatum placeat eos!
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quae velit tenetur distinctio blanditiis ipsum vel impedit accusantium ipsam nemo, nisi debitis necessitatibus totam aut architecto laudantium animi? Error, ad!</p>
+        </div>
+    </div>
+    <div class="main-works">
+        <h2>Trabalhos</h2>
+        <div class="work-examples">
+            <img src="https://picsum.photos/400/500" alt="Exemplo de trabalho 400/500">
+            <img src="https://picsum.photos/200/300" alt="Exemplo de trabalho 200/300">
+            <img src="https://picsum.photos/500/600" alt="Exemplo de trabalho 500/600">
+            <img src="https://picsum.photos/300/400" alt="Exemplo de trabalho 300/400">
+        </div>
+    </div>
+    <div class="subscribe">
+        <h4>Inscreva-se</h4>
+        <form action="">
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text">
+            </div>
+
+            <div>
+                <label for="phone">Telefone</label>
+                <input type="text">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
