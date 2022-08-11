@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20220801ex3</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário</h1>
+    </header>
+    <section>
+        <form action="#">
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" name="nome" required/>
+            <br>
+            <label for="idade">Idade:</label>
+            <input type="radio" id="idade1" name="idade" value="1">
+            <label for="idade1">&lt;18</label>
+            <input type="radio" id="idade2" name="idade" value="2">
+            <label for="idade2">19-35</label>
+            <input type="radio" id="idade3" name="idade" value="3">
+            <label for="idade3">36-48</label>
+            <input type="radio" id="idade4" name="idade" value="4">
+            <label for="idade4">&gt;49</label>
+            <br>
+            <label for="profissao">Profissão</label>
+            <input type="text" name="profissao" id="profissao"/>
+            <br>
+            <label for="interesses">Interesses</label><br>
+            <select name="interesses" id="interesses" multiple>
+                <option value="1">Ler</option>
+                <option value="2">Escrever</option>
+                <option value="3">Cozinhar</option>
+                <option value="4">Voluntariado</option>
+                <option value="5">Esportes</option>
+                <option value="6">Instrumentos</option>
+                <option value="7">Meditação</option>
+                <option value="8">Viagens</option>
+                <option value="8">Decoração</option>
+            </select>
+            <br>
+            <label for="comoDescobriu">Como Descobriu o Site?</label><br>
+            <textarea name="comoDescobriu" id="comoDescobriu" cols="30" rows="10" required></textarea>
+            <br>
+            <button type="submit" id="enviar">Enviar</button>
+            <button type="reset" id="limpar">Limpar</button>
+        </form>
+    </section>
+</body>
+</html>
