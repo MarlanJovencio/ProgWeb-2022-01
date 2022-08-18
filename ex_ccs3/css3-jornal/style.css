@@ -104,6 +104,7 @@ section#news article {
     position: relative;
     color: black;
     display: block;
+    max-width: max-content;
 }
 
 section#news article header {
@@ -116,13 +117,49 @@ section#news article header {
 section#news article header h1 {
     padding: 24px;
     text-shadow: 3px 7px 10px #000000;
+    font-size: xx-large;
 }
 
 section#news article img {
     width: 100%;
 }
 
-section#news article :nth-child(3)::first-letter {
+section#news > article :nth-child(3)::first-letter {
     font-size: 2em;
     font-weight: bold;
+}
+
+section footer {
+    background-color: #f4655f;
+    color: white;
+    margin-top: 12px;
+}
+
+section footer a {
+    text-decoration: underline;
+    color: white;
+    padding: 12px;
+}
+
+section footer > span {
+    display: inline-flex;
+    padding: 12px 12px;
+}
+
+section footer span.tags a {
+    padding: 0px 4px;
+}
+
+section footer > a.comments::after {
+    content: " comentários";
+}
+
+footer {
+    background-color: #2a2f33;
+    color: #e8e9e9;
+}
+
+footer p {
+    padding: 16px;
+    font-size: large;
 }

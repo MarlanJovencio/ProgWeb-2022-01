@@ -1,0 +1,42 @@
+form {
+    background-color: #edeff0;
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    margin: 12px;
+}
+
+form label {
+    margin: 12px;
+    margin-left: 24px;
+}
+
+form label input {
+    display: block;
+    width: 100%;
+    margin-top: 6px;
+    font-size: large;
+    border: transparent;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}
+
+form label textarea {
+    display: block;
+    width: 100%;
+    margin-top: 6px;
+    height: 80px;
+}
+
+form button {
+    background-color: black;
+    color: white;
+    font-size: large;
+    padding: 6px;
+    width: fit-content;
+    display: block;
+    margin: 0px 12px 12px auto;
+    border-color: black;
+}

@@ -1,0 +1,49 @@
+section#comments :nth-child(3)::first-letter,
+section#comments > article :nth-child(3)::first-letter {
+    font-size: 1em !important;
+    font-weight: normal !important;
+}
+
+section#comments > h1 {
+    margin: 12px 0px;
+    font-size: large;
+}
+
+section#news article > p, section#news article > #comments {
+    margin: 12px;
+}
+
+.comment {
+    display: grid !important;
+    grid-template-columns: auto auto;
+}
+
+.comment .user {
+    font-style: italic;
+    grid-column: 1;
+}
+
+.comment span.user::after {
+    content: " said:";
+    font-style: normal;
+}
+
+.comment .date {
+    text-align: end;
+}
+
+.comment p {
+    grid-row: 2;
+    grid-column: auto / span 2;
+    background-color: #edeff0;
+    padding: 12px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.comment p::before {
+    content: "\201C";
+    font-size: xxx-large;
+    color: #cccccc;
+    margin-top: 5px;
+}

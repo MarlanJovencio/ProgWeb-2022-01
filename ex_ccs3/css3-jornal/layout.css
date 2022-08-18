@@ -1,0 +1,81 @@
+body {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background-color: #edeff0;
+}
+
+header {
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: auto 20%;
+}
+
+header h1 {
+    grid-column: 1 / span 2;
+}
+
+header h2 {
+    align-self: center;
+}
+
+header div#signup {
+    display: flex;
+    justify-content: center;
+}
+
+nav#menu ul {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+#menu {
+    display: flex;
+    padding: 0px;
+    flex-direction: column;
+    font-size: 1em;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+nav#menu ul li {
+    width: 100%;
+    background-color: white;
+}
+
+nav#menu ul li:hover {
+    background-color: azure;
+    cursor: pointer;
+}
+
+aside#related {
+    grid-column: 2;
+    grid-row: 2 / span 3;
+}
+
+section#news {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+section#news article {
+    margin-right: 16px;
+    margin-bottom: 16px;
+    padding: 0px;
+    background-color: white;
+}
+
+section#news footer span.tags {
+    margin-left: auto;
+}
+
+section#news footer {
+    margin-right: 0px;
+}
+
+footer {
+    grid-column: 1 / span 1;
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
