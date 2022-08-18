@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    font-family: Verdana;
+    margin: 0;
+}
+
+p {
+    font-family: Georgia;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #046dd5;
+}
+
+header h1 {
+    padding: 24px 0px 0px 12px;
+}
+
+header h2 {
+    padding: 12 0px 0px 12px;
+    padding-left: 12px;
+    font-size: 1em;
+}
+
+header a {
+    color: white;
+}
+
+header div#signup {
+    padding: 12px 12px;
+}
+
+header div#signup a {
+    padding: 0px 12px;
+}
+
+header div :first-child {
+    border-right: 1px solid white;
+    padding-left: 0px !important;
+}
+
+#menu {
+    display: flex;
+    padding: 0px;
+    flex-direction: column;
+    font-size: 1em;
+}
+
+#menu input {
+    display: none;
+}
+
+#menu a {
+    color: black;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#menu ul li {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-top: 6px solid transparent;
+}
+
+#menu ul :nth-child(1) { border-color: #e1493e; }
+#menu ul :nth-child(2) { border-color: #8aba56; }
+#menu ul :nth-child(3) { border-color: #5b4282; }
+#menu ul :nth-child(4) { border-color: #ff8932; }
+#menu ul :nth-child(5) { border-color: #19b6e9; }
+#menu ul :nth-child(6) { border-color: #e84c8b; }
+
+aside#related {
+    background-color: #2a2f33;
+}
+
+aside#related, aside#related a {
+    color: white;
+}
+
+aside#related article {
+    padding: 12px;
+}
+
+aside#related article h1 {
+    padding: 12px 0px;
+}
+
+section#news article {
+    padding: 12px 0px;
+    position: relative;
+    color: black;
+    display: block;
+}
+
+section#news article header {
+    position: absolute;
+    text-align: left;
+    background-color: transparent;
+    width: 25%;
+}
+
+section#news article header h1 {
+    padding: 24px;
+    text-shadow: 3px 7px 10px #000000;
+}
+
+section#news article img {
+    width: 100%;
+}
+
+section#news article :nth-child(3)::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+}
